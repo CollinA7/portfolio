@@ -19,7 +19,7 @@ body {
 header {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 15px 5%;
     background-color: #33435e;
     align-items: center;
@@ -49,7 +49,11 @@ nav ul li a {
 
 .sub-box-bg {
     margin: auto 15px;
-    background-color: aquamarine;
-    padding: 65px;
-    background-size: 120%;
+    padding: 4em;
+    background-image: 
+    url(./images/bg-avi.JPG),
+    url(./images/sub-box-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right 50px bottom -25px, center ;
+    background-size: 92px, 100%;
 }
