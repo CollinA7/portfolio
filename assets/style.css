@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 :root {
@@ -12,6 +11,7 @@
 body {
     color: #0c0c2e;
     font-family:'Courier New', Courier, monospace;
+    background-color: aliceblue;
 }
 
 /*  Header section  */
@@ -58,23 +58,29 @@ nav ul li a {
     background-size: 92px, 100%;
 }
 
-/* Main section styling */
+/* Section-body styling */
 
-.section-body {
-    padding: 40px;
-    border-top: 15px;
-}
-
-.section-body h2 {
-    border-right: #0c0c2e;
-    background-color: aliceblue;
-}
-
-.section-body h4 {
-    float: right;
+.section-title {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    margin: 10px;
+    padding: 40px;
+    width: 10%;
+    position: relative;
+    text-align: right;
 }
 
-/* Work Grid styling */
+.section-title h2 {
+    border-right: #0c0c2e;
+}
+
+
+/* Content-body styling */
+
+.content-body {
+    padding: 35px;
+    position: relative;
+    left: 150px;
+    width: 80%;
+}
 
