@@ -57,3 +57,24 @@ nav ul li a {
     background-position: right 50px bottom -25px, center ;
     background-size: 92px, 100%;
 }
+
+/* Main section styling */
+
+.section-body {
+    padding: 40px;
+    border-top: 15px;
+}
+
+.section-body h2 {
+    border-right: #0c0c2e;
+    background-color: aliceblue;
+}
+
+.section-body h4 {
+    float: right;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Work Grid styling */
+
