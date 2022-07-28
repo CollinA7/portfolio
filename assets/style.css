@@ -90,11 +90,13 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Work section styling */
+
 .b-body-box {
     padding: 28px;
     margin: 10px;
     width: 90%;
-    height: 50%;
+    height: 60%;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +114,12 @@ nav ul li a {
     font-weight: bold;
 }
 
-.b-body-box h3 {
+.work-box h3 {
+    padding: 10px;
     position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+    border: 2px solid #0c0c2e;
+    flex: 1 0 0;
 }
