@@ -60,5 +60,34 @@ nav ul li a {
 
 /* Section-body styling */
 
+.div-box {
+    padding: 28px;
+    margin: 10px;
+    width: 90%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.div-box h2{
+    padding: 10px;
+    position: relative;
+    width: 120px;
+    height: 100%;
+    background-color: aliceblue;
+    border-right: 3px solid #0c0c2e;
+    font-weight: bold;
+}
+
+.div-box div h4 {
+    padding: 10px;
+    position: relative;
+    width: 450px;
+    height: 100%;
+    background-color: aliceblue;
+    font-weight: bold;
+}
 
 
