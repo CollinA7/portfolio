@@ -60,66 +60,56 @@ nav ul li a {
 
 /* Section-body styling */
 
-.a-body-box {
-    padding: 28px;
-    margin: 10px;
-    width: 90%;
-    height: 50%;
+.about-category {
+    width: 95%;
+    padding: 25px;
+    display: flex;
     position: absolute;
+}
+
+.about-category h2 {
+    margin: 8px;
+    padding-right: 93px;
+    position: relative;
+    border-right: #0c0c2e solid 2px;
+}
+
+.work-category {
+    height: 80%;
+    width: 95%;
+    top: 48%;
+    padding: 25px;
+    display: flex;
+    position: absolute;
+}
+
+.work-category h2 {
+    margin: 8px;
+    width: 125px;
+    padding: 25px;
+    position: relative;
+    border-right: #0c0c2e solid 2px;
+}
+
+.card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.a-body-box h2{
-    padding: 10px;
-    position: relative;
-    width: 120px;
-    height: 100%;
-    background-color: aliceblue;
-    border-right: 3px solid #0c0c2e;
-    font-weight: bold;
+.card {
+    margin: 5px;
+    height: 250px;
+    width: 250px;
+    border:#0c0c2e solid 1px;
+    border-radius: 8%;
 }
 
-.a-body-box h4 {
-    padding: 10px;
-    position: relative;
-    width: 450px;
-    height: 100%;
-    background-color: aliceblue;
-    font-weight: bold;
-}
+.card h4{
+    margin: 5px;
+    text-align: center;
+};
 
-/* Work section styling */
-
-.b-body-box {
-    padding: 28px;
-    margin: 10px;
-    width: 90%;
-    height: 60%;
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    top: 560px;
-}
-
-.b-body-box h2 {
-    padding: 10px;
-    position: relative;
-    width: 120px;
-    height: 100%;
-    background-color: aliceblue;
-    border-right: 3px solid #0c0c2e;
-    font-weight: bold;
-}
-
-.work-box h3 {
-    padding: 10px;
-    position: relative;
-    height: 100px;
-    width: 100px;
-    background-color: aliceblue;
-    border: 2px solid #0c0c2e;
-    flex: 1 0 0;
+.contact-info {
+    background-color: #33435e;
 }
