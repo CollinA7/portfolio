@@ -1,39 +1,45 @@
 import React from "react";
 
 function Nav() {
+    const categories = [
+        {
+          name: 'about',
+          description: 'blah'
+        },
+        {
+          name: 'portfolio',
+          description: 'blah 2'
+        },
+        {
+          name: 'contact',
+          description: 'how to contact me'
+        },
+        {
+          name: 'resume',
+          description: 'just a resume'
+        }
+    ]
+
+    function categorySelected(name) {
+        console.log(`${name}`)
+    }
 
     return (
-        <div>
-            <h1>
-                <a data-testid="link" href="/">
-                    Collin
-                </a>
-            </h1>
-            <ul>
-                <h2>
-                <li>
-                    <a data-testid="about" href="#about">
-                        About me
-                    </a>
+        <>
+        <nav>
+            <ul className="flex-row">            
+            {categories.map((category) => (
+                <li
+                key = {category.name}
+                >
+                <span onClick={() => categorySelected(category.name)} >
+                    {category.name}
+                </span>
                 </li>
-                <li>
-                    <a data-testid="portfolio" href="#portfolio">
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a data-testid="contact" href="#contact">
-                        Contact
-                    </a>
-                </li>
-                <li>
-                    <a data-testid="resume" href="#resume">
-                        Resume
-                    </a>
-                </li>
-                </h2>
+            ))}
             </ul>
-        </div>
+        </nav>
+        </>
     )
 }
 
