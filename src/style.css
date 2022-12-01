@@ -46,7 +46,22 @@ footer {
     text-align: center;
 }
 
-a:link {
-    text-decoration: none;
+.fyg {
+    background-image: url('./components/assets/images/fyg.jpg');
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-position-y: top;
+    background-position-x: center;
+    background-size: 340px;
+    color: var(--tertiary-color);
 }
 
+.niche {
+    background-image: url('./components/assets/images/niche.jpg');
+    background-repeat: no-repeat;
+    background-attachment:inherit;
+    background-position-y: top;
+    background-position-x: center;
+    background-size: 340px;
+    color: var(--tertiary-color);
+}

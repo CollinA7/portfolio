@@ -2,16 +2,25 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div>
+    <div className='row'>
       <h2>About Page</h2>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+      <div className='col'>
+        <img
+        src={require('../assets/images/about-pic.jpg').default}
+        alt={'Me excited about a new computer part'}
+        />
+      </div>
+      <div className='col'>
+        <p>
+          Hi there!
+        </p>
+        <p>
+          My name is Collin. I am from San Antonio, Texas. I and a soon to be father and have many hobbies. Some include
+          keeping a saltwater fish tank, video games, 3D printing, and now web development!
+          Although I am a new web developer I am a fast learner and have always been good at problem solving.
+          
+        </p>
+      </div>
     </div>
   );
 }

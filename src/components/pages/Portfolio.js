@@ -6,19 +6,19 @@ export default function Portfolio() {
     <div className='container'>
       <h2>Portfolio</h2>
       <div className='row'>
-          <div className='col card'>
+          <div className='col card fyg'>
             Find your game
           </div>
-          <div className='col card'>
-            test
+          <div className='col card niche'>
+            Niche
           </div>
       </div>
       <div className='row'>
-      <div className='col card'>
-            test
+        <div className='col card'>
+            Placeholder
           </div>
           <div className='col card'>
-            test
+            Placeholder
           </div>
       </div>
     </div>
