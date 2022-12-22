@@ -39,6 +39,10 @@ nav a {
   text-align: center;
 }
 
+.card:hover {
+  opacity: 0.6;
+}
+
 footer {
   background-color: var(--primary-color);
   color: var(--quaternary-color);
@@ -57,6 +61,16 @@ footer {
 
 .niche {
   background-image: url("./components/assets/images/niche.jpg");
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 340px;
+  color: var(--tertiary-color);
+}
+
+.path-finder {
+  background-image: url("./components/assets/images/path-finder.jpg");
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-position-y: top;
