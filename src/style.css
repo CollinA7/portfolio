@@ -64,12 +64,3 @@ footer {
   background-size: 340px;
   color: var(--tertiary-color);
 }
-
-.path-finder {
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-position-y: top;
-  background-position-x: center;
-  background-size: 340px;
-  color: var(--tertiary-color);
-}
