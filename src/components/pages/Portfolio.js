@@ -9,7 +9,7 @@ export default function Portfolio() {
         <div className="col card niche">Niche</div>
       </div>
       <div className="row">
-        <div className="col card">Placeholder</div>
+        <div className="col card path-finder"></div>
         <div className="col card">Placeholder</div>
       </div>
     </div>
