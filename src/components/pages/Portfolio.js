@@ -1,13 +1,22 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import { Row } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
 
 export default function Portfolio() {
-  const projectData = [];
+  const projectData = [
+    {
+      name: "find-your-game",
+      desription: "blah blah",
+      link: "http://blahblah",
+    },
+  ];
 
   return (
-    <div className="container">
+    <Container>
       <h2>Portfolio</h2>
-      <div className="row">
-        <div className="col card flip-card">
+      <Row>
+        <Col xs={6} className=" card flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front fyg" />
             <div className="flip-card-back">
@@ -23,7 +32,7 @@ export default function Portfolio() {
               </a>
               <br />
               <a
-                href="https://github.com/CollinA7/portfolio-2"
+                href="https://dlope0831.github.io/find-your-game/"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -31,13 +40,8 @@ export default function Portfolio() {
               </a>
             </div>
           </div>
-        </div>
-        <div className="col card niche">Niche</div>
-      </div>
-      {/* <div className="row">
-        <div className="col card path-finder"></div>
-        <div className="col card">Placeholder</div>
-      </div> */}
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 }
