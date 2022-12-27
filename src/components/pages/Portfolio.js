@@ -8,20 +8,33 @@ export default function Portfolio() {
     {
       name: "Find your Game",
       desription: "Description",
-      gitHublink: "https://github.com/CollinA7/portfolio-2",
+      gitHublink: "https://github.com/CollinA7/find-your-game",
       deployedLink: "https://dlope0831.github.io/find-your-game/",
-      image: "./assets/images/fyg.jpg",
+      imageAndClass: "flip-card-front fyg",
+    },
+    {
+      name: "Niche",
+      desription: "Description",
+      gitHublink: "https://github.com/CollinA7/niche",
+      deployedLink: "https://thawing-garden-93969.herokuapp.com/",
+      imageAndClass: "flip-card-front niche",
+    },
+    {
+      name: "Path-Finder",
+      desription: "Description",
+      gitHublink: "https://github.com/CollinA7/project-3",
+      deployedLink: "https://blooming-sands-77631.herokuapp.com/",
+      imageAndClass: "flip-card-front path-finder",
     },
   ];
 
   const projectMap = projectData.map((data) => (
-    <Col xs={6} className=" card flip-card">
+    <Col xs={6} className=" card flip-card" key={data.name}>
       <div className="flip-card-inner">
-        <div className="flip-card-front fyg" />
+        <div className={data.imageAndClass} />
         <div className="flip-card-back">
           <h3>{data.name}</h3>
           <p>{data.desription}</p>
-          <p>also description</p>
           <a href={data.gitHublink} rel="noreferrer" target="_blank">
             Github
           </a>
@@ -34,10 +47,10 @@ export default function Portfolio() {
     </Col>
   ));
 
-  console.log(projectMap);
   return (
     <Container>
       <h2>Portfolio</h2>
+      <p>Hover over the cards below to find out more!</p>
       <Row>{projectMap}</Row>
     </Container>
   );

@@ -31,8 +31,6 @@ nav a {
 
 /* end header styling */
 .card {
-  width: 100%;
-  height: 15rem;
   padding: 5px;
   margin: 10px;
   text-align: center;
@@ -44,41 +42,11 @@ footer {
   text-align: center;
 }
 
-.fyg {
-  background-image: url("./components/assets/images/fyg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-position-y: top;
-  background-position-x: center;
-  background-size: 340px;
-  color: var(--tertiary-color);
-}
-
-.niche {
-  background-image: url("./components/assets/images/niche.jpg");
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-position-y: top;
-  background-position-x: center;
-  background-size: 340px;
-  color: var(--tertiary-color);
-}
-
-.path-finder {
-  background-image: url("./components/assets/images/path-finder.jpg");
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-position-y: top;
-  background-position-x: center;
-  background-size: 340px;
-  color: var(--tertiary-color);
-}
-
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 200px;
+  height: 260px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -112,6 +80,33 @@ footer {
 .flip-card-front {
   background-color: #bbb;
   color: black;
+}
+
+.fyg {
+  background-image: url("./components/assets/images/fyg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 340px;
+}
+
+.niche {
+  background-image: url("./components/assets/images/niche.jpg");
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 340px;
+}
+
+.path-finder {
+  background-image: url("./components/assets/images/path-finder.jpg");
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 370px;
 }
 
 /* Style the back side */
