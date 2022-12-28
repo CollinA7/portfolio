@@ -7,22 +7,25 @@ export default function Portfolio() {
   const projectData = [
     {
       name: "Find your Game",
-      desription: "Description",
+      desription:
+        "This quiz is designed to give users a new savepoint in their video game journey. By selecting tags. Get recommendations for all different genres, as well as receive price ranges for each of those answers.",
       gitHublink: "https://github.com/CollinA7/find-your-game",
       deployedLink: "https://dlope0831.github.io/find-your-game/",
       imageAndClass: "flip-card-front fyg",
     },
     {
       name: "Niche",
-      desription: "Description",
+      desription:
+        "Niche is a POS application focused on local e-commerce industries that allows up-and-coming entrepreneurs to springboard their restaurant business to the next level",
       gitHublink: "https://github.com/CollinA7/niche",
       deployedLink: "https://thawing-garden-93969.herokuapp.com/",
       imageAndClass: "flip-card-front niche",
     },
     {
       name: "Path-Finder",
-      desription: "Description",
-      gitHublink: "https://github.com/CollinA7/project-3",
+      desription:
+        "Path-Finder is an app that find National Parks in my area With information about the parks including An Image Location And a list of amenities that the parks offer",
+      gitHublink: "https://github.com/CollinA7/path-finder",
       deployedLink: "https://blooming-sands-77631.herokuapp.com/",
       imageAndClass: "flip-card-front path-finder",
     },
