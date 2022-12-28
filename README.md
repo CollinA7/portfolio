@@ -1,5 +1,5 @@
 
-  # Portfolio 2.0
+  # Portfolio
 
   ## Description
   
@@ -8,7 +8,7 @@
   ## Links
   
   - Here is a link to the deployed application
-  https://collina7.github.io/portfolio-2/
+  https://collina7.github.io/portfolio/
   
   
 
