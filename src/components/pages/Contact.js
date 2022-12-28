@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Form from "react-bootstrap/Form";
+import { Button } from "react-bootstrap";
 
 export const ContactMe = () => {
   const form = useRef();
@@ -26,15 +28,24 @@ export const ContactMe = () => {
 
   return (
     <section className="container">
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="from_name" />
-        <label>Email</label>
-        <input type="email" name="reply_to" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
+      <Form ref={form} onSubmit={sendEmail}>
+        <Form.Group className="col-md-9">
+          <Form.Label>Name:</Form.Label>
+          <Form.Control type="text" name="from_name" />
+        </Form.Group>
+        <Form.Group className="col-md-9">
+          <Form.Label>Email:</Form.Label>
+          <Form.Control type="email" name="reply_to" />
+        </Form.Group>
+        <Form.Group className="col-md-9">
+          <Form.Label>Message:</Form.Label>
+          <Form.Label name="message" />
+          <Form.Control type="test" name="message" />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Send
+        </Button>
+      </Form>
     </section>
   );
 };
