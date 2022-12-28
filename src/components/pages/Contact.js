@@ -1,55 +1,42 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
-export default function Contact() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+export const ContactMe = () => {
+  const form = useRef();
 
-  const { name, email, message } = formState;
-
-  function handleChange(e) {
-    setFormState({ ...formState, [e.target.name]: e.target.value });
-  }
-
-  function handleSubmit(e) {
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log(formState);
-  }
+
+    emailjs
+      .sendForm(
+        "service_zbeizld",
+        "template_mrznn1t",
+        form.current,
+        "8_q8L_dIDniQB3HBn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className="container">
-      <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            defaultValue={name}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input
-            type="email"
-            name="email"
-            defaultValue={email}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            name="message"
-            rows="5"
-            defaultValue={message}
-            onChange={handleChange}
-          />
-        </div>
-        <button type="submit">Submit</button>
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type="text" name="from_name" />
+        <label>Email</label>
+        <input type="email" name="reply_to" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
       </form>
     </section>
   );
-}
+};
+
+export default ContactMe;
