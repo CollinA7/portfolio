@@ -28,7 +28,9 @@ nav a {
   margin: 5px;
   padding: 5px;
 }
-
+form {
+  background-color: #888888;
+}
 /* end header styling */
 .card {
   padding: 5px;
