@@ -13,7 +13,7 @@ export default function About() {
       <div className="col">
         <p>Hi there!</p>
         <p>
-          My name is Collin. I am from San Antonio, Texas. I and a soon to be
+          My name is Collin. I am from San Antonio, Texas. I am a soon to be
           father and have many hobbies. Some include keeping a saltwater fish
           tank, video games, 3D printing, and now web development! Although I am
           a new web developer I am a fast learner and have always been good at

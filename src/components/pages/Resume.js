@@ -46,9 +46,6 @@ export default function Resume() {
         • REST <br />• React
         <br /> • jQuery •
       </p>
-      <span>Certifications and Licenses:</span> Full-Stack web development
-      December 2022 to Present I have a certification for Full Stack web
-      development from The University of Texas at San Antonio.
     </div>
   );
 }
